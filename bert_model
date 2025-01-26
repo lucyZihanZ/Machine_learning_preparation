@@ -1,0 +1,109 @@
+from transformers import BertTokenizer, BertModel
+import torch
+import torch.nn as nn
+import numpy as np
+
+# Custom Dataset
+class CustomDataset(torch.utils.data.Dataset):
+    def __init__(self, texts, labels, keywords, tokenizer, max_len):
+        self.texts = texts
+        self.labels = labels
+        self.keywords = keywords
+        self.tokenizer = tokenizer
+        self.max_len = max_len
+
+    def __len__(self):
+        return len(self.texts)
+
+    def __getitem__(self, index):
+        text = self.texts[index]
+        label = self.labels[index]
+
+        # Tokenize text for BERT
+        encoding = self.tokenizer.encode_plus(
+            text,
+            max_length=self.max_len,
+            truncation=True,
+            add_special_tokens=True,
+            padding="max_length",
+            return_attention_mask=True,
+            return_tensors="pt",
+        )
+
+        # Generate keyword-based features
+        keyword_count = sum(1 for keyword in self.keywords if keyword in text.lower())
+        keyword_feature = torch.tensor([keyword_count], dtype=torch.float32)
+
+        return {
+            "input_ids": encoding["input_ids"].squeeze(),
+            "attention_mask": encoding["attention_mask"].squeeze(),
+            "label": torch.tensor(label, dtype=torch.long),
+            "keyword_feature": keyword_feature,
+        }
+
+
+# BERT-based Classification Model
+class BERTWithKeywordsClassifier(nn.Module):
+    def __init__(self, bert_model_name, num_labels):
+        super(BERTWithKeywordsClassifier, self).__init__()
+        self.bert = BertModel.from_pretrained(bert_model_name)
+        self.fc = nn.Linear(self.bert.config.hidden_size + 1, num_labels)  # +1 for keyword feature
+        self.dropout = nn.Dropout(0.3)
+
+    def forward(self, input_ids, attention_mask, keyword_feature):
+        outputs = self.bert(input_ids=input_ids, attention_mask=attention_mask)
+        cls_output = outputs.pooler_output  # [CLS] token representation
+        combined_features = torch.cat((cls_output, keyword_feature), dim=1)
+        combined_features = self.dropout(combined_features)
+        logits = self.fc(combined_features)
+        return logits
+
+
+# Parameters
+PRETRAINED_MODEL_NAME = "bert-base-uncased"
+MAX_LEN = 128
+BATCH_SIZE = 16
+EPOCHS = 3
+LEARNING_RATE = 2e-5
+KEYWORDS = ["environment", "climate", "age", "sex", "gender"]  # Add your keywords here
+
+# Example Data
+texts = ["The study focused on the impact of age and gender on climate policies.", 
+         "Environmental conservation is critical for all age groups."]
+labels = [1, 0]  # Example labels (1: positive, 0: negative)
+
+# Load Tokenizer
+tokenizer = BertTokenizer.from_pretrained(PRETRAINED_MODEL_NAME)
+
+# Dataset and DataLoader
+dataset = CustomDataset(texts, labels, KEYWORDS, tokenizer, MAX_LEN)
+dataloader = torch.utils.data.DataLoader(dataset, batch_size=BATCH_SIZE, shuffle=True)
+
+# Initialize Model
+device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
+model = BERTWithKeywordsClassifier(PRETRAINED_MODEL_NAME, num_labels=2)
+model = model.to(device)
+
+# Optimizer and Loss
+optimizer = torch.optim.AdamW(model.parameters(), lr=LEARNING_RATE)
+criterion = nn.CrossEntropyLoss()
+
+# Training Loop
+for epoch in range(EPOCHS):
+    model.train()
+    total_loss = 0
+    for batch in dataloader:
+        input_ids = batch["input_ids"].to(device)
+        attention_mask = batch["attention_mask"].to(device)
+        keyword_feature = batch["keyword_feature"].to(device)
+        labels = batch["label"].to(device)
+
+        optimizer.zero_grad()
+        logits = model(input_ids, attention_mask, keyword_feature)
+        loss = criterion(logits, labels)
+        loss.backward()
+        optimizer.step()
+
+        total_loss += loss.item()
+
+    print(f"Epoch {epoch + 1}/{EPOCHS}, Loss: {total_loss / len(dataloader)}")

@@ -5,7 +5,7 @@ from sklearn.model_selection import cross_val_score
 # These are some machine learning methods (including supervised and unsupervised) and some deep learning methods proposed by kaggle and standford cheat sheet
 
 # data loading
-df = pd.read_excel('Concrete_Data.xls')
+df = pd.read_csv('train.csv')
 # missing_value
 missing_val = df.isnull().sum()  # no missing values
 #  
