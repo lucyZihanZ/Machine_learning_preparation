@@ -65,11 +65,14 @@ class BERTWithAttention(nn.Module):
 PRETRAINED_MODEL_NAME = "bert-base-uncased"
 MAX_LEN = 128
 BATCH_SIZE = 16
-EPOCHS = 50
+EPOCHS = 5
 LEARNING_RATE = 2e-5
 NUM_CLASSES = 4  # Number of groups
 
 # Example data
+import pandas as pd
+content = pd.read_csv('Disney.csv', sep=',')
+print(content.shape)
 texts = [
     "The study focused on the impact of age and gender on climate policies.",
     "Environmental conservation is critical for all age groups.",
