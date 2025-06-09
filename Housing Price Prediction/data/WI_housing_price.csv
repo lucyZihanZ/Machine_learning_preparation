@@ -1,0 +1,51 @@
+property_url,style,beds,full_baths,half_baths,sqft,year_built,sold_price,lot_sqft,latitude,longitude,county,stories,parking_garage
+https://www.realtor.com/realestateandhomes-detail/7000916215,SINGLE_FAMILY,2,1,0,1092,1940,144313,5097,44.993849,-92.757772,St. Croix,0,1
+https://www.realtor.com/realestateandhomes-detail/7674660488,SINGLE_FAMILY,2,1,0,920,1922,150000,5227,42.696941,-89.017108,Rock,1,1
+https://www.realtor.com/realestateandhomes-detail/7823811569,MULTI_FAMILY,6,2,0,1728,1900,190000,6098,42.911858,-89.207775,Dane,3,2
+https://www.realtor.com/realestateandhomes-detail/8731900350,SINGLE_FAMILY,4,1,0,1880,1940,39000,6098,44.575147,-91.670395,Buffalo,2,3
+https://www.realtor.com/realestateandhomes-detail/8288195746,SINGLE_FAMILY,2,1,1,986,1858,164000,6534,42.854875,-90.180221,Iowa,2,0
+https://www.realtor.com/realestateandhomes-detail/8179038053,SINGLE_FAMILY,3,1,1,1560,1956,35000,6534,42.502003,-89.067874,Rock,2,2
+https://www.realtor.com/realestateandhomes-detail/7899236246,SINGLE_FAMILY,3,2,0,1748,1860,220000,6534,43.500986,-88.546721,Dodge,2,0
+https://www.realtor.com/realestateandhomes-detail/8103302102,SINGLE_FAMILY,4,2,1,2312,2006,330000,7405,43.003285,-89.503096,Dane,2,2
+https://www.realtor.com/realestateandhomes-detail/7868027686,SINGLE_FAMILY,3,1,0,930,1961,195300,8276,43.098392,-89.309024,Dane,0,2
+https://www.realtor.com/realestateandhomes-detail/7826157917,SINGLE_FAMILY,3,1,0,1189,1949,175000,8712,43.220264,-89.342453,Dane,1,1
+https://www.realtor.com/realestateandhomes-detail/8359347221,SINGLE_FAMILY,2,1,1,1224,1970,48300,8712,42.982996,-90.648096,Grant,2,1
+https://www.realtor.com/realestateandhomes-detail/7490549246,SINGLE_FAMILY,5,2,1,2489,1955,475000,8276,43.066717,-89.338117,Dane,2,2
+https://www.realtor.com/realestateandhomes-detail/7120726923,SINGLE_FAMILY,3,2,1,2680,2006,303000,8494,43.030661,-89.276545,Dane,0,2
+https://www.realtor.com/realestateandhomes-detail/7060563948,SINGLE_FAMILY,3,2,1,1513,2003,265000,9148,43.010444,-89.485804,Dane,0,2
+https://www.realtor.com/realestateandhomes-detail/7800556030,SINGLE_FAMILY,3,1,0,912,1951,213000,9583,43.450801,-88.824234,Dodge,1,2
+https://www.realtor.com/realestateandhomes-detail/7724281054,SINGLE_FAMILY,3,3,1,1956,1990,320000,9148,43.021072,-89.486395,Dane,2,2
+https://www.realtor.com/realestateandhomes-detail/8174778180,SINGLE_FAMILY,4,3,0,3200,2007,389900,8712,42.998626,-89.412653,Dane,0,2
+https://www.realtor.com/realestateandhomes-detail/8905701003,SINGLE_FAMILY,2,2,0,1311,1950,212500,9583,43.337808,-89.374299,Columbia,0,4
+https://www.realtor.com/realestateandhomes-detail/7065342119,SINGLE_FAMILY,2,1,0,1548,1935,29100,9583,43.037055,-91.139747,Crawford,2,2
+https://www.realtor.com/realestateandhomes-detail/8127130264,SINGLE_FAMILY,3,1,1,1110,1950,178000,9932,44.86355,-92.632558,St. Croix,0,3
+https://www.realtor.com/realestateandhomes-detail/7566314575,SINGLE_FAMILY,3,1,0,992,1952,202500,10019,43.12276,-89.356588,Dane,1,1
+https://www.realtor.com/realestateandhomes-detail/8480578835,SINGLE_FAMILY,3,2,0,1690,1970,219900,10454,42.878807,-88.580309,Jefferson,1,1
+https://www.realtor.com/realestateandhomes-detail/8558786137,SINGLE_FAMILY,2,1,0,872,1960,146000,10890,43.274723,-89.729078,Sauk,0,1
+https://www.realtor.com/realestateandhomes-detail/8659326685,SINGLE_FAMILY,4,1,0,1892,1890,129900,10454,45.247913,-92.271313,Polk,0,1
+https://www.realtor.com/realestateandhomes-detail/7808306827,SINGLE_FAMILY,2,1,0,996,1900,128300,11326,43.538357,-90.002239,Sauk,2,1
+https://www.realtor.com/realestateandhomes-detail/8848714560,SINGLE_FAMILY,3,1,1,1626,1955,250100,11326,43.032677,-89.453261,Dane,1,1
+https://www.realtor.com/realestateandhomes-detail/7865491676,SINGLE_FAMILY,4,1,1,2484,1864,185000,11326,43.47118,-89.735968,Sauk,2,2
+https://www.realtor.com/realestateandhomes-detail/7423501334,SINGLE_FAMILY,3,1,1,1514,1976,224000,12197,42.931693,-89.234733,Dane,0,2
+https://www.realtor.com/realestateandhomes-detail/8886966567,SINGLE_FAMILY,4,2,0,1624,1983,325000,12632,42.870691,-89.535952,Dane,2,3
+https://www.realtor.com/realestateandhomes-detail/7947905567,SINGLE_FAMILY,4,3,0,1694,2005,275500,12632,43.442413,-88.85224,Dodge,1,2
+https://www.realtor.com/realestateandhomes-detail/8736208679,SINGLE_FAMILY,2,1,0,971,1964,180000,13504,43.573979,-88.936002,Dodge,0,2
+https://www.realtor.com/realestateandhomes-detail/7835266367,SINGLE_FAMILY,3,1,1,1242,1889,139900,13939,46.729972,-92.090821,Douglas,1,3
+https://www.realtor.com/realestateandhomes-detail/7883657524,SINGLE_FAMILY,5,3,0,3346,1999,360000,13068,43.873208,-91.221465,La Crosse,1,3
+https://www.realtor.com/realestateandhomes-detail/8437973010,SINGLE_FAMILY,2,1,0,857,1955,161000,14375,43.134303,-89.375843,Dane,0,2
+https://www.realtor.com/realestateandhomes-detail/8589375271,SINGLE_FAMILY,3,2,0,2216,1987,247964,14375,43.019312,-89.294537,Dane,0,2
+https://www.realtor.com/realestateandhomes-detail/7883469788,SINGLE_FAMILY,3,1,1,1320,1967,216000,15246,43.091421,-89.30324,Dane,1,1
+https://www.realtor.com/realestateandhomes-detail/7926397188,SINGLE_FAMILY,3,2,0,1512,1900,215000,15682,43.010092,-89.732678,Dane,2,0
+https://www.realtor.com/realestateandhomes-detail/7265890057,SINGLE_FAMILY,3,2,0,1584,2016,285000,16553,43.486594,-89.71841,Sauk,1,3
+https://www.realtor.com/realestateandhomes-detail/8172932186,SINGLE_FAMILY,3,2,0,2592,1981,79900,16117,42.915253,-90.272584,Iowa,2,0
+https://www.realtor.com/realestateandhomes-detail/8465717947,SINGLE_FAMILY,4,3,0,4564,1985,381000,15682,43.008556,-89.449258,Dane,0,2
+https://www.realtor.com/realestateandhomes-detail/7204280315,SINGLE_FAMILY,3,2,1,2238,1988,361000,16988,43.089094,-89.489175,Dane,2,2
+https://www.realtor.com/realestateandhomes-detail/8705212432,SINGLE_FAMILY,3,1,0,1744,1900,172000,17424,43.85213,-89.123163,Green Lake,2,2
+https://www.realtor.com/realestateandhomes-detail/8189301715,SINGLE_FAMILY,3,3,1,3176,2007,514600,20909,43.586742,-89.791339,Sauk,1,3
+https://www.realtor.com/realestateandhomes-detail/7807897695,SINGLE_FAMILY,4,1,1,2768,1985,45000,22651,43.658064,-90.343775,Vernon,0,2
+https://www.realtor.com/realestateandhomes-detail/8651646478,SINGLE_FAMILY,4,4,1,5491,1996,585100,23087,43.116169,-88.326812,Waukesha,0,3
+https://www.realtor.com/realestateandhomes-detail/8484105188,SINGLE_FAMILY,4,1,0,2512,1971,57750,25700,43.532079,-89.926291,Sauk,1,0
+https://www.realtor.com/realestateandhomes-detail/8184709997,SINGLE_FAMILY,3,2,0,2068,1989,335000,27007,43.216092,-89.303093,Dane,2,2
+https://www.realtor.com/realestateandhomes-detail/7855746556,SINGLE_FAMILY,3,2,0,1100,1974,209000,27748,43.169515,-89.287454,Dane,0,2
+https://www.realtor.com/realestateandhomes-detail/8408996310,SINGLE_FAMILY,4,2,0,2135,1984,410500,28314,43.998211,-89.959016,Adams,0,2
+https://www.realtor.com/realestateandhomes-detail/8706863078,MULTI_FAMILY,6,0,0,8770,1910,120000,26572,45.449919,-92.553478,Polk,0,0
